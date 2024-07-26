@@ -1,0 +1,11 @@
+FROM ubuntu:24.04@sha256:c920ba4cfca05503764b785c16b76d43c83a6df8d1ab107e7e6610000d94315c as builder
+
+FROM pwn.red/jail
+
+COPY --from=builder / /srv
+
+
+COPY flag.txt /srv/app/
+
+
+
