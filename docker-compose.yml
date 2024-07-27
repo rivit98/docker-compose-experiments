@@ -3,140 +3,36 @@ services:
   h:
     build:
       context: ./h/private
-    ports:
-      - "10000:1337"
-    privileged: true
-    restart: unless-stopped
-    profiles:
-        - enabled
-    
+    command: 'tail -F anything'
   e:
     build:
       context: ./e/private
-    ports:
-      - "10001:1337"
-    privileged: true
-    restart: unless-stopped
-    profiles:
-        - enabled
-    
+    command: 'tail -F anything'
   i:
     build:
       context: ./i/private
-    ports:
-      - "10002:1337"
-    privileged: true
-    restart: unless-stopped
-    profiles:
-        - enabled
-    
+    command: 'tail -F anything'
   f:
     build:
       context: ./f/private
-    ports:
-      - "10003:1337"
-    privileged: true
-    restart: unless-stopped
-    profiles:
-        - enabled
-    
-  o:
-    build:
-      context: ./o/private
-    ports:
-      - "10004:1337"
-    privileged: true
-    restart: unless-stopped
-    profiles:
-        - enabled
-    
-  m:
-    build:
-      context: ./m/private
-    ports:
-      - "10006:1337"
-    privileged: true
-    restart: unless-stopped
-    profiles:
-        - enabled
-    
-  k:
-    build:
-      context: ./k/private
-    ports:
-      - "10008:1337"
-    privileged: true
-    restart: unless-stopped
-    profiles:
-        - enabled
-    
-  j:
-    build:
-      context: ./j/private
-    ports:
-      - "10009:1337"
-    privileged: true
-    restart: unless-stopped
-    profiles:
-        - enabled
-    
+    command: 'tail -F anything'
   d:
     build:
       context: ./d/private
-    ports:
-      - "10010:1337"
-    privileged: true
-    restart: unless-stopped
-    profiles:
-        - enabled
-    
+    command: 'tail -F anything'
   c:
     build:
       context: ./c/private
-    ports:
-      - "10011:1337"
-    privileged: true
-    restart: unless-stopped
-    profiles:
-        - enabled
-    
+    command: 'tail -F anything'
   g:
     build:
       context: ./g/private
-    ports:
-      - "10012:1337"
-    privileged: true
-    restart: unless-stopped
-    profiles:
-        - enabled
-    
+    command: 'tail -F anything'
   b:
     build:
       context: ./b/private
-    ports:
-      - "10013:1337"
-    privileged: true
-    restart: unless-stopped
-    profiles:
-        - enabled
-    
+    command: 'tail -F anything'
   a:
     build:
       context: ./a/private
-    ports:
-      - "10014:1337"
-    privileged: true
-    restart: unless-stopped
-    profiles:
-        - enabled
-    
-  l:
-    build:
-      context: ./l/private
-    ports:
-      - "10015:1337"
-    privileged: true
-    restart: unless-stopped
-    profiles:
-        - enabled
-    
+    command: 'tail -F anything'

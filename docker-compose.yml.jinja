@@ -3,12 +3,5 @@ services:
   {{ task_name }}:
     build:
       context: ./{{ task_name }}/private
-    ports:
-      - "{{ task_details.get('port') }}:1337"
-    privileged: true
-    restart: unless-stopped
-    {% if task_details.get('enabled') -%}
-    profiles:
-        - enabled
-    {% endif %}
+    command: 'tail -F anything'
   {%- endfor %}
